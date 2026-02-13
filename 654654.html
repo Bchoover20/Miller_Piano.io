@@ -1,0 +1,104 @@
+
+Mobile friendly height options:
+<div style="min-height: 50px; max-height: 200px; background-color: var(--bs-indigo);">
+    Flexible height example
+</div>
+
+
+<div style="height: 10vh; background-color: var(--bs-indigo);">
+    Viewport-relative height example
+</div>
+
+
+
+Extending the rootclass 
+
+<style>
+    :root {
+        --bs-teal-300: #4dc0b5; /* Define a light teal shade */
+    }
+</style>
+
+
+en="ja" for japenese
+
+
+
+<div class="container-fluid p-3 text-darker border border-dark" style="background-color: var(--bs-paleBlue); ">
+    <h2 class="display-3"> Ongaku-Hime by Ryan Miller </h2>
+
+    <div class="row align-items-center border border-dark text-dark pl-5 pr-5" style="background-color: var(--bs-pinky);">
+        <div class="col border border-dark">
+            <h3 class="fw-light"> Home </h3>
+        </div>
+        <div class="col border border-dark">
+            <h3 class="fw-light"> About </h3>
+        </div>
+        <div class="col border border-dark">
+            <h3 class="fw-light"> Works/Projects </h3>
+        </div>
+        <div class="col border border-dark">
+            <h3 class="fw-light"> Contact </h3>
+        </div>
+        <div class="col border border-dark ">
+            <h3 class="fw-light"> Staff </h3>
+        </div>
+      </div>
+</div>
+
+
+
+The .container-fluid class spans the full width of the viewport but has no default height, so its height will be determined by its child elements (the heading and the .row).
+
+
+
+
+ <!-- Works/Projects Section old carousel incase I wanted to bring it back  -->
+    <div class="content-section">
+        <h1 class="section-title">Featured Works</h1>
+        
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <a href="https://youtube.com" target="_blank" style="text-decoration: none;">
+                <img src="Album1.jpg" class="d-block w-100" alt="EP 1 - Inori Minase">
+                </a>
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>EP 1 - Inori Minase</h5>
+                  <p>A beautiful composition inspired by anime and emotional storytelling.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <a href="https://www.youtube.com/watch?v=rTxKbytt5uc" target="_blank" style="text-decoration: none;">
+                <img src="Album2.jpg" class="d-block w-100" alt="Weight of the World">
+                </a>
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Weight of the World</h5>
+                  <p>An epic orchestral arrangement with dramatic piano passages.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <a href="https://www.youtube.com/watch?v=8su69ApCp6k" target="_blank" style="text-decoration: none;">
+                <img src="Album3.jpg" class="d-block w-100" alt="Heart of a Flower">
+                </a>
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Heart of a Flower</h5>
+                  <p>Delicate and intricate piano composition with rich harmonies.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </div>
